@@ -11,7 +11,7 @@ func main() {
 	// Echoのインスタンス作る
 	e := echo.New()
 
-	// 全てのリクエストで差し込みたいミドルウェア（ログとか）はここ
+	// 全てのリクエストで差し込みたいミドルウェア
 	e.Use(middleware.Logger())
 	e.Use(middleware.Recover())
 
@@ -23,7 +23,7 @@ func main() {
 }
 
 func mainPage() echo.HandlerFunc {
-	return func(c echo.Context) error { //c をいじって Request, Responseを色々する
+	return func(c echo.Context) error {
 		return c.String(http.StatusOK, "Hello World")
 	}
 }
