@@ -9,6 +9,8 @@ ADD . /go/src/app
 
 RUN go mod download
 
-RUN go build
+RUN go build -o app.exe
+# ポート
+EXPOSE 1323
 
-CMD ["./app.exe"]
+CMD ./app.exe
