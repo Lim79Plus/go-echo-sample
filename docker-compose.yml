@@ -2,6 +2,5 @@ version: '2'
 services:
   app:
     build: .
-    tty: true
-    volumes:
-     - .:/go/src/work
+    ports:
+     - "1323:1323"
