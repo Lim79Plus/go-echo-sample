@@ -1,5 +1,5 @@
 # Docker base Image
-FROM golang:latest
+FROM golang:1.13.2-alpine
 # コンテナ内に作業ディレクトリを作成
 RUN mkdir /go/src/app
 # コンテナログイン時のディレクトリ指定
