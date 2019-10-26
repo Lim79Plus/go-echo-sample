@@ -21,5 +21,5 @@ curl http://192.168.99.100:1323/hello
 上記以外の場合
 
 ```:cmd
-curl http://loalhost:1323/hello
+curl http://localhost:1323/hello
 ```
